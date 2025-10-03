@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Main Profile Card */
+        .profile-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            padding: 40px;
+        }
+
+        /* Profile Picture Styling */
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #7a5af3;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #333;
+            margin: 10px 0;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            color: #7a5af3;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f0f2f5;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* List Styling for Education & Skills */
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        li {
+            background-color: #f8f9fa;
+            border-left: 4px solid #7a5af3;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        
+        /* Skills List specific styling */
+        .skills-list li {
+            display: inline-block;
+            background-color: #e9e3ff;
+            color: #7a5af3;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            font-weight: 600;
+            border-left: none;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .contact-info a {
+            color: #7a5af3;
+            font-size: 2em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: #5a3fbc;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="photo.JPG" alt="Profile Picture" class="profile-picture">
+
+        <h1>Venkata Siva Sai Krishna Pokuri</h1>
+
+        <p>Hello! I'm Venkata Siva Sai Krishna Pokuri, currently pursuing my M.Tech at the International Institute of Information Technology, Hyderabad.</p>
+        
+        <div class="contact-info">
+            <a href="mailto:your-email@example.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+
+        <section>
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            <ul>
+                <li><strong>M.Tech, Computer Science & Information Security</strong><br>IIIT Hyderabad (2025 - 2027)</li>
+                <li><strong>B.Tech, Computer Science & Engineering</strong><br>Lovely Professional University (2021 - 2025)</li>
+                <li><strong>Intermediate (Maths, Physics, Chemistry)</strong><br>Narayana Junior College (2018 - 2020)</li>
+                <li><strong>High School</strong><br>Jawahar Navodaya Vidyalaya (2017 - 2018)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2><i class="fas fa-cogs"></i> Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>DBMS</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
